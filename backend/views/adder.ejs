@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/reset.css" />
+        <link rel="stylesheet" href="/style.css" />
+        <script src="/script.js" defer></script>
+    </head>
+    <body>
+        <form id="adding-form" method="post" action="/edit/package">
+            <h1>Package details</h1>
+            <p>
+                <label class="hidden" for="name">Name:</label>
+                <input type="text" id="name" name="name" />
+            </p>
+            <p>
+                <label class="hidden" for="description">Details:</label>
+                <textarea name="description" id="description"></textarea>
+            </p>
+            <p id="dependency-editor">
+                <label for="dependencies">Package dependencies</label>
+                <input
+                    type="text"
+                    id="dependencies"
+                    name="dependencies"
+                    list="dependency-list" />
+                <datalist id="dependency-list"></datalist>
+            </p>
+            <p id="release-editor">
+                <label for="releases">Version</label>
+                <input type="text" id="releases" name="releases" />
+            </p>
+            <!-- version editor -->
+            <p><button type="submit">Submit</button></p>
+        </form>
+    </body>
+</html>

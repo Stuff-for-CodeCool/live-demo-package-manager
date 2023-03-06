@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+    --bg1: #f2f2f2;
+    --bg2: #fff;
+    --text1: #000;
+    --text2: #757575;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--bg1);
+    color: var(--text1);
+    font: 16px/1.6 "Montserrat", sans-serif;
+
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg2);
+    max-width: 513px;
+    margin: 36px auto;
+    padding: 35px 38px;
+}
+
+body,
+input,
+button[type="submit"],
+textarea {
+    border-radius: 5px;
+}
+
+input,
+textarea,
+label,
+form > h1 {
+    margin-bottom: 21px;
+}
+
+button[type="submit"],
+label,
+#deleter,
+form h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+button[type="submit"],
+#deleter,
+label {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+label,
+input,
+button[type="submit"],
+#deleter,
+textarea {
+    width: 100%;
+}
+
+button[type="submit"],
+input,
+#deleter,
+textarea {
+    padding: 18px 30px;
+}
+
+input,
+textarea {
+    border: 1px solid;
+}
+
+#dependency-lister li {
+    display: flex;
+    padding: 8px;
+    gap: 10px;
+    border-bottom: 1px solid var(--text2);
+}
+
+#dependency-lister li:last-of-type {
+    border: 0;
+}
+
+#dependency-lister button {
+    border: 2px solid;
+    border-radius: 50%;
+    width: 1.6rem;
+    text-align: center;
+}
+
+#dependency-lister button:focus,
+#dependency-lister button:hover {
+    background-color: var(--bg2);
+}
+
+#dependency-lister span + span {
+    margin-inline-start: auto;
+}
+
+button[type="submit"] {
+    background: var(--text1);
+    color: var(--bg1);
+}
+
+button[type="submit"]:focus,
+button[type="submit"]:hover {
+    background: var(--text2);
+}
+
+#deleter,
+button {
+    cursor: pointer;
+}
+
+#deleter {
+    color: var(--text2);
+}
+
+#deleter:focus,
+#deleter:hover {
+    color: var(--text1);
+    text-decoration: underline;
+}
